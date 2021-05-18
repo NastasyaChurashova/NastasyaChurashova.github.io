@@ -1,212 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="fonts.css" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/26c724b3b181aad246aa1321eaa9ea21?family=Lucida+Sans+Unicode" rel="stylesheet" type="text/css"/>
-    <title>Theyalow</title>
-  </head>
-  <body>
-    <div class="bg">
-        <header>
-            <img src="assets/icons/Logo.png" id="logo" alt="logo"/>
-              <span class="TheYalow">THEYALOW</span>
-              <nav class="top-menu">
-                  <button class="button"><a href="#about" id="about_us">ABOUT US</a></button>
-                  <button class="button"><a href="#services" id="services">SERVICES</a></button>
-                  <button class="button"><a href="#contact" id="contact">CONTACT</a></button>
-              </nav>
-        </header>
-        <main>
-            <section class="cool">
-                <svg
-                    id="arrows"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="18.056in" height="0.792in">
-                    <path fill-rule="evenodd"  fill="rgb(245, 197, 6)"
-                    d="M1268.000,-0.000 L1300.000,-0.000 L1300.000,57.000 L1268.000,57.000 L1268.000,-0.000 Z"/>
-                    <path fill-rule="evenodd"  opacity="0.71" fill="rgb(245, 197, 6)"
-                    d="M0.000,-0.000 L32.000,-0.000 L32.000,57.000 L0.000,57.000 L0.000,-0.000 Z"/>
-                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                    d="M8.013,28.201 L10.974,31.185 L10.977,31.182 L17.273,37.515 C17.273,37.515 18.769,38.722 20.077,37.386 C21.385,36.050 20.359,34.652 20.359,34.652 L14.083,28.338 L20.679,22.299 C20.679,22.299 21.471,20.537 20.489,19.535 C19.507,18.532 17.718,19.315 17.718,19.315 L11.119,25.357 L11.099,25.337 L8.013,28.201 Z"/>
-                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                    d="M1291.987,27.200 L1289.026,30.185 L1289.023,30.182 L1282.727,36.515 C1282.727,36.515 1281.231,37.722 1279.923,36.386 C1278.615,35.051 1279.640,33.652 1279.640,33.652 L1285.917,27.338 L1279.321,21.299 C1279.321,21.299 1278.529,19.537 1279.511,18.535 C1280.493,17.532 1282.282,18.315 1282.282,18.315 L1288.881,24.357 L1288.901,24.337 L1291.987,27.200 Z"/>
-                </svg>
-                <img id="video_line" src="assets/icons/video_line.png" alt="video_line"/>
-                <img id="video_line_2" src="assets/icons/video_line_2.png" alt="video_line"/>
-
-                <picture>
-                    <source
-                      srcset="assets\images\Layer_17.png"
-                      media="(max-width: 360px)"
-                    />
-                    <source srcset="assets\images\Layer_17.png" />
-                    <img
-                      id="parrot_image"
-                      src="assets\images\Layer_17.png"
-                      alt="parrots_video"
-                      width="100%"
-                      height="auto"
-                    />
-                  </picture>
-                  <svg id="play_3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="0.25in" height="0.444in">
-                  <path fill-rule="evenodd"  fill="rgb(245, 244, 242)"
-                  d="M0.592,2.405 C0.592,1.584 0.985,1.005 1.764,0.666 C2.549,0.333 3.248,0.467 3.864,1.072 L17.330,14.566 C17.717,14.951 17.901,15.412 17.880,15.950 C17.880,16.468 17.697,16.914 17.330,17.283 L3.864,30.829 C3.248,31.449 2.549,31.583 1.764,31.234 C0.985,30.896 0.592,30.301 0.592,29.450 L0.592,2.405 L0.592,2.405 Z"/>
-              </svg>
-              <svg id="play_4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="0.847in" height="0.847in">
-                  <path fill-rule="evenodd"  opacity="0.722" fill="rgb(245, 197, 6)"
-                  d="M30.500,-0.000 C47.345,-0.000 61.000,13.655 61.000,30.500 C61.000,47.345 47.345,61.000 30.500,61.000 C13.655,61.000 -0.000,47.345 -0.000,30.500 C-0.000,13.655 13.655,-0.000 30.500,-0.000 Z"/>
-              </svg>
-                  <div id="cool_h1">
-                  <h1 id="coloured_h1">THE COOL</h1>
-                  <h1>THE MINIMAL</h1>
-                </div>
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator__display">0</div>
+        <div class="calculator__keys">
+          <button class="key--operator" data-action="add">+</button>
+          <button class="key--operator" data-action="subtract">-</button>
+          <button class="key--operator" data-action="multiply">&times;</button>
+          <button class="key--operator" data-action="divide">÷</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>0</button>
+          <button data-action="decimal">.</button>
+          <button data-action="clear">AC</button>
+          <button class="key--operator" data-action="square_root">&#8730;</button>
+          <button class="key--operator" data-action="exponent">^</button>
+          <button class="key--equal" data-action="calculate">=</button>
         </div>
-            <section class="better_design"> 
-                <div class="download">
-                    <svg 
-                        id="download_icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="1.514in" height="1.028in">
-                        <path fill-rule="evenodd"  fill="rgb(245, 197, 6)"
-                        d="M81.750,74.000 L23.844,74.000 C10.675,74.000 -0.000,63.458 -0.000,50.454 C-0.000,39.774 7.247,30.858 17.117,27.976 C17.099,27.617 17.031,27.275 17.031,26.909 C17.031,17.620 24.656,10.091 34.062,10.091 C35.946,10.091 37.726,10.465 39.419,11.022 C44.380,4.369 52.304,-0.000 61.312,-0.000 C74.266,-0.000 85.058,8.945 87.827,20.908 C99.941,23.643 109.000,34.300 109.000,47.091 C109.000,61.952 96.800,74.000 81.750,74.000 ZM61.312,47.091 L61.312,26.909 L47.687,26.909 L47.687,47.091 L37.256,47.091 L54.500,64.119 L71.744,47.091 L61.312,47.091 Z"/>
-                    </svg>
-                    <span>BETTER DESIGN</span>
-                  </div>
-                  <div class="customise">
-                    <svg
-                        id="leaf"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="1.278in" height="1.319in">
-                        <path fill-rule="evenodd"  fill="rgb(245, 197, 6)"
-                        d="M75.640,55.570 C70.948,85.676 39.707,87.763 22.236,86.510 C21.081,91.688 20.631,95.000 20.631,95.000 L12.043,95.000 C12.043,95.000 23.109,53.031 48.893,30.731 C53.685,26.429 59.018,22.709 65.007,20.021 C37.194,30.220 17.788,64.817 9.149,83.221 C5.228,77.357 -5.987,57.126 6.726,32.688 C20.059,7.058 92.000,-0.000 92.000,-0.000 C92.000,-0.000 81.312,19.183 75.640,55.570 Z"/>
-                     </svg>
-                     <span>CUSTOMISE</span>
-                    </div>
-                    <div class="its_free">
-                      <svg
-                          id="paper_plane"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          width="1.125in" height="1.153in">
-                          <path fill-rule="evenodd"  fill="rgb(245, 197, 6)"
-                          d="M59.231,50.806 L59.231,74.951 L48.693,61.277 L26.831,83.000 L-0.000,-0.000 L81.000,29.176 L59.231,50.806 ZM7.594,7.881 L53.662,56.339 L59.062,50.974 L7.594,7.881 Z"/>
-                     </svg>
-                     <span>ITS FREE</span>
-                    </div>
-            </section>
-            <section class="lorem_middle">
-                <h2 class="lorem">LOREM IPSUM DOLOR SIT AMET</h2>
-                <div class="lorem_middle_squares">
-                  <div class="orange_bg">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-                  <svg
-                    id="cross_icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="0.153in" height="0.153in">
-                  <path fill-rule="evenodd"  opacity="0.702" fill="rgb(255, 255, 255)"
-                    d="M11.000,7.000 L7.000,7.000 L7.000,11.000 L4.000,11.000 L4.000,7.000 L-0.000,7.000 L-0.000,4.000 L4.000,4.000 L4.000,-0.000 L7.000,-0.000 L7.000,4.000 L11.000,4.000 L11.000,7.000 Z"/>
-                 </svg>
-                </div>
-                <div>
-                  <img src="assets/images/Layer_25.png" alt="monkey_video" />
-                  <div>
-                  <svg id="play_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="0.25in" height="0.444in">
-                      <path fill-rule="evenodd"  fill="rgb(245, 244, 242)"
-                      d="M0.592,2.405 C0.592,1.584 0.985,1.005 1.764,0.666 C2.549,0.333 3.248,0.467 3.864,1.072 L17.330,14.566 C17.717,14.951 17.901,15.412 17.880,15.950 C17.880,16.468 17.697,16.914 17.330,17.283 L3.864,30.829 C3.248,31.449 2.549,31.583 1.764,31.234 C0.985,30.896 0.592,30.301 0.592,29.450 L0.592,2.405 L0.592,2.405 Z"/>
-                  </svg>
-                  <svg id="play_2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="0.847in" height="0.847in">
-                      <path fill-rule="evenodd"  opacity="0.722" fill="rgb(245, 197, 6)"
-                      d="M30.500,-0.000 C47.345,-0.000 61.000,13.655 61.000,30.500 C61.000,47.345 47.345,61.000 30.500,61.000 C13.655,61.000 -0.000,47.345 -0.000,30.500 C-0.000,13.655 13.655,-0.000 30.500,-0.000 Z"/>
-                  </svg>
-                  </div>
-                </div>
-                  <div class="orange_bg">
-                    <span>22</span>
-                    <svg id="bird_icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="2.264in" height="1.847in">
-                      <path fill-rule="evenodd"  fill-opacity="0.902" fill="rgb(188, 125, 0)"
-                      d="M162.999,15.313 L147.718,30.626 C147.718,30.626 147.718,29.238 147.718,33.178 C147.718,35.977 147.268,38.650 146.617,41.247 C146.261,62.313 139.565,90.248 112.061,112.297 C57.960,155.668 -0.001,117.402 -0.001,117.402 C45.843,117.402 45.843,102.088 45.843,102.088 C35.655,102.088 15.280,81.671 15.280,81.671 C20.374,86.775 30.562,81.671 30.562,81.671 C5.092,66.357 5.092,51.044 5.092,51.044 C10.186,56.148 20.374,51.044 20.374,51.044 C-5.095,30.626 10.186,5.103 10.186,5.103 C15.280,30.626 81.499,40.835 81.499,40.835 L82.341,40.412 C81.822,38.078 81.499,33.118 81.499,30.626 C81.499,12.302 96.322,-0.001 114.608,-0.001 C124.673,-0.001 133.579,4.595 139.650,11.698 L142.624,10.208 L157.905,-0.001 L147.718,20.417 L162.999,15.313 Z"/>
-                    </svg>
-                    <svg 
-                      class="cross_icon_2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="0.153in" height="0.153in">
-                      <path fill-rule="evenodd"  opacity="0.702" fill="rgb(255, 255, 255)"
-                      d="M11.000,7.000 L7.000,7.000 L7.000,11.000 L4.000,11.000 L4.000,7.000 L-0.000,7.000 L-0.000,4.000 L4.000,4.000 L4.000,-0.000 L7.000,-0.000 L7.000,4.000 L11.000,4.000 L11.000,7.000 Z"/>
-                  </svg>
-                  </div>
-                </div>
-                <div class="date_square">
-                  <span style="color: white; font-size: 2em" font-style: "bold">25</span>
-                  <span style="color: rgba(167, 51, 6, 0.767); font-size: 1em">APRIL</span>
-                </div>
-                <div class="lorem_middle_line">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="12.444in" height="0.208in">
-                      <path fill-rule="evenodd"  opacity="0.478" fill="rgb(255, 255, 255)"
-                      d="M7.500,-0.000 L888.500,-0.000 C892.642,-0.000 896.000,3.358 896.000,7.500 C896.000,11.642 892.642,15.000 888.500,15.000 L7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"/>
-                    </svg>
-                      <svg class="lorem_middle_orange_line"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="2.736in" height="0.208in">
-                      <path fill-rule="evenodd"  fill="rgb(236, 158, 3)"
-                      d="M7.500,-0.000 L189.500,-0.000 C193.642,-0.000 197.000,3.358 197.000,7.500 C197.000,11.642 193.642,15.000 189.500,15.000 L7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"/>
-                      </svg>
-                  </div>
-            </section>
-            <section class="lorem_low">
-                <h2 class="lorem yalow">LOREM IPSUM DOLOR SIT AMET</h2>
-                <div class="lorem_low_container">
-                    <img src="assets/icons/Ellipse.png" class="ellipse_icon" alt="ellipse">
-                    <span class="banner">ITS 100% FREE</span>
-                <div class="device_icons">
-                    <img src="assets/icons/monitor_icon.png" alt="monitor_icon">
-                    <img src="assets/icons/tablet_icon.png" alt="tablet_icon">
-                    <img src="assets/icons/phone_icon.png" alt="phone_icon">
-                </div>
-                <div class="list">
-                    <ul>
-                      <li>Sed ut perspiciatis unde omnis</li>
-                      <li>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</li>
-                      <li>Sed ut perspiciatis unde onmis</li>
-                      <li>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</li>
-                    </ul>
-                  </div>
-            </section>
-        </main>
-        <footer>
-            <hr>
-            <div class="footer">
-            <img src="assets/icons/Logo.png" id="logo_footer" alt="logo"/>
-            <span class="TheYalow" style="font-size:29px">THEYALOW</span>
-            </div>
-        </footer>
-    </body>
-</html>
+    </div>
+
+<script>
+    const calculator = document.querySelector('.calculator')
+    const keys = calculator.querySelector('.calculator__keys')
+    const display = document.querySelector('.calculator__display')
+    const calculate = (n1, operator, n2) => {
+        const firstNum = parseFloat(n1)
+        const secondNum = parseFloat(n2)
+        if (operator === 'add') return firstNum + secondNum
+        if (operator === 'subtract') return firstNum - secondNum
+        if (operator === 'multiply') return firstNum * secondNum
+        if (operator === 'divide') return firstNum / secondNum
+        if (operator === 'square_root') return Math.sqrt(firstNum);
+        if (operator === 'exponent') return Math.pow(firstNum, secondNum);
+      }
+
+    keys.addEventListener('click', e => {
+    if (e.target.matches('button')) {
+        const key = e.target;
+        const action = key.dataset.action;
+        const keyContent = key.textContent
+        const displayedNum = display.textContent
+        const previousKeyType = calculator.dataset.previousKeyType
+        
+        Array.from(key.parentNode.children)
+          .forEach(k => k.classList.remove('is-pressed'));
+           
+
+        if (!action) {
+          if (displayedNum === '0' || 
+              previousKeyType === 'operator'||
+              previousKeyType === 'calculate'
+          ) {
+              display.textContent = keyContent;
+          } else {
+            display.textContent = displayedNum + keyContent;
+          }
+          calculator.dataset.previousKeyType = 'number';
+        }
+
+        if (
+          action === 'add' ||
+          action === 'subtract' ||
+          action === 'multiply' ||
+          action === 'divide' ||
+          action === 'square_root'||
+          action === 'exponent'
+        ) {
+          const firstValue = calculator.dataset.firstValue
+          const operator = calculator.dataset.operator
+          const secondValue = displayedNum
+
+           if (
+             firstValue && 
+             operator &&
+             previousKeyType !== 'operator' &&
+             previousKeyType !== 'calculate'
+            ){
+              const calcValue = calculate(firstValue, operator, secondValue)
+              display.textContent = calcValue
+              calculator.dataset.firstValue = calcValue
+              } else {
+                calculator.dataset.firstValue = displayedNum;
+              }
+                        
+            key.classList.add('is-pressed');
+            calculator.dataset.previousKeyType = 'operator';
+            calculator.dataset.operator = action;
+
+            if (action ==='divide' && secondValue==='0'){
+              console.log('Error');
+              display.textContent='Error';
+            }
+          }
+
+        if (action === 'decimal') {
+          if (!displayedNum.includes('.')) {
+            display.textContent = displayedNum + '.'
+          } else if (
+            previousKeyType === 'operator'||
+            previousKeyType === 'calculate'
+          ){
+            display.textContent = '0.'
+          }
+          calculator.dataset.previousKey = 'decimal';
+        }
+
+        if (action !== 'clear') {
+          const clearButton = calculator.querySelector('[data-action=clear]')
+          clearButton.textContent = 'CE'
+        }
+
+        if (action === 'clear') {
+          if (key.textContent === 'AC') {
+              calculator.dataset.firstValue = ''
+              calculator.dataset.modValue = ''
+              calculator.dataset.operator = ''
+              calculator.dataset.previousKeyType = ''
+            } else {
+              key.textContent = 'AC'
+          }
+            display.textContent = 0;
+            calculator.dataset.previousKeyType = 'clear';
+          } 
+
+        if (action === 'calculate') {
+          let firstValue = calculator.dataset.firstValue;
+          const operator = calculator.dataset.operator;
+          let secondValue = displayedNum;
+
+        if (firstValue) {
+            if (previousKeyType === 'calculate') {
+                firstValue = displayedNum
+                secondValue = calculator.dataset.modValue;
+              }
+            display.textContent = calculate(firstValue, operator, secondValue)
+          }
+          calculator.dataset.modValue = secondValue;
+          calculator.dataset.previousKeyType = 'calculate';
+        }
+                 
+      };
+    })
+</script>
+</body>
+</html>   
