@@ -43,7 +43,12 @@
         if (operator === 'add') return firstNum + secondNum
         if (operator === 'subtract') return firstNum - secondNum
         if (operator === 'multiply') return firstNum * secondNum
-        if (operator === 'divide') return firstNum / secondNum
+        if (operator === 'divide' && secondNum !==0) {
+          return firstNum / secondNum }
+          else { 
+            console.log('Error');
+            return display.textContent='Error';
+          }
         if (operator === 'square_root') return Math.sqrt(firstNum);
         if (operator === 'exponent') return Math.pow(firstNum, secondNum);
       }
